@@ -259,7 +259,7 @@ p.cta-sub-title
 }
 .fig-caption
 {
-	padding: 56px 20px 0px;
+	padding: 20px 20px 0px;
 }
 .fig-caption h3
 {
@@ -411,13 +411,13 @@ margin-top: 5px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 40px;
-    height: 60px;
+    height: 25px;
     line-height: 60px;
     text-align: left;
     color: #666;
     font-size: 14px;
-    padding: 0 35px;
-    margin-bottom: 30px;
+    padding: 0 10px;
+    margin-bottom: 10px;
     width: 100%;
     outline: none;
     appearance: none;
@@ -459,6 +459,7 @@ margin-top: 5px;
 	display:block;
 }
 
+
 .button-medium {
     background: #e43c5c;
     border-radius: 40px;
@@ -466,14 +467,14 @@ margin-top: 5px;
     cursor: pointer;
     display: block;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    height: 48px;
-    line-height: 48px;
+    height: 35px;
+    line-height: 35px;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
-    width: 200px;
+    width: 100px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -567,7 +568,8 @@ cta
     width: 100%;
 }
 .fig-caption {
-    padding: 56px 20px 20px;
+    padding-top: 0px;
+    /*padding: 56px 20px 20px;*/
 }
 }
 @media (min-width: 301px) and (max-width: 450px) {
@@ -579,9 +581,6 @@ cta
 {
     padding-right: 30px;
     padding-left: 30px;
-}
-.fig-caption {
-    padding: 13px 20px 0px;
 }
 .team-social li {
     width: 20px;
