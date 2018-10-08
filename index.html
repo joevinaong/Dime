@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <!-- =======================================================
     Theme Name: Tempo
     Theme URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
@@ -35,14 +36,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#banner">Home</a></li>
                         <li><a href="#service">How it works</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">Our Team</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+
     <!--HEADER END-->
 
     <!--BANNER START-->
@@ -65,12 +64,11 @@
                                 <div class="form-sec">
                                     <form action="" method="post" role="form" class="contactForm" id="test-form">
                                         <div class="form-group">
-                                            <input type="text" name="form_field_1" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                            <div class="validation"></div>
-                                            <input type="text" name="form_field_2" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input type="text" name="form_field_1" class="form-control text-field-box" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input type="text" name="form_field_2" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                             <div class="validation"></div>
 
-                                            <button class="button-medium" id="contact-submit" type="submit" name="contact">Submit Now</button>
+                                            <button class="button-medium" id="submit-form" type="submit" name="contact">Submit Now</button>
                                         </div>
                                     </form>
                                 </div>
@@ -79,6 +77,7 @@
 
                         </div>
                     </div>
+
                     <div class="col-md-6">
                         <br>
                         <div class="team-info" style="background: white">
@@ -95,7 +94,7 @@
                                             <div class="validation"></div>
                                             <input type="text" name="form_field_4" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                             <div class="validation"></div>
-                                            <button class="button-medium" id="contact-submit" type="submit" name="contact">Submit Now</button>
+                                            <button class="button-medium" id="submit-form" type="submit" name="contact">Submit Now</button>
                                         </div>
                                     </form>
                                 </div>
@@ -156,7 +155,7 @@
                                         <input type="text" name="form_field_2" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
 
-                                        <button class="button-medium" id="contact-submit" type="submit" name="contact">Submit Now</button>
+                                        <button class="button-medium" id="submit-form" type="submit" name="contact">Submit Now</button>
                                     </div>
 
                                 </form>
@@ -191,7 +190,7 @@
                                         <input type="text" name="form_field_4" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
 
-                                        <button class="button-medium" id="contact-submit" type="submit" name="contact">Submit Now</button>
+                                        <button class="button-medium" id="submit-form" type="submit" name="contact">Submit Now</button>
                                     </div>
                                 </form>
                             </div>
@@ -232,7 +231,7 @@
         $(document).ready(function() {
 
             var $form = $('form#test-form'),
-                url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+                url = 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec'
 
             $('#submit-form').on('click', function(e) {
                 e.preventDefault();
@@ -247,6 +246,20 @@
             })
 
         });
+
+    </script>
+    <!-- Global site tag (g (gtag.js) - ) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127127728-1"></script>
+    <script>
+        window.dataLayer = w = = window.dataLayer || || [];
+
+        function gtag() {
+            () {
+                dataLayer.push(arg(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-127127728-1');
 
     </script>
 
