@@ -4,17 +4,15 @@
 <head>
     <!-- Global site tag (g (gtag.js) - ) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127127728-1"></script>
-    <script>    
-        window.dataLayer = w = = window.dataLayer || || [];
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
         function gtag() {
-            () {
-                dataLayer.push(arg(arguments);
-                }
-                gtag('js', new Date());
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-                gtag('config', 'UA-127127728-1');
-
+        gtag('config', 'UA-127127728-1');
     </script>
     <title>DIME</title>
     <meta charset="utf-8">
@@ -76,7 +74,7 @@
                                 <h3>I'm a Diner</h3>
                                 <p class="marb-20">Free food from just doing simple surveys?<br> Sign me up!</p>
                                 <div class="form-sec">
-                                    <form action="" method="post" role="form" class="contactForm" id="test-form">
+                                    <form action="" method="post" role="form" class="contactForm" id="test-form1">
                                         <div class="form-group">
                                             <input type="text" name="form_field_1" class="form-control text-field-box" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                             <input type="text" name="form_field_2" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -102,7 +100,7 @@
                                 <h3>I'm an F&B Operator</h3>
                                 <p class="marb-20">I'd love to post questions to gain feedback from my customers<br>Sign me up!</p>
                                 <div class="form-sec">
-                                    <form action="" method="post" role="form" class="contactForm" id="test-form">
+                                    <form action="" method="post" role="form" class="contactForm" id="test-form2">
                                         <div class="form-group">
                                             <input type="text" name="form_field_3" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                             <div class="validation"></div>
@@ -162,7 +160,7 @@
                                 <p style="text-align: left">Collect your free meal voucher when you complete the survey!</p>
                             </div>
                             <div class="service-box">
-                                <form action="" method="post" role="form" class="contactForm" id="test-form">
+                                <form action="" method="post" role="form" class="contactForm" id="test-form3">
                                     <div class="form-group">
                                         <input type="text" name="form_field_1" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
@@ -197,7 +195,7 @@
                                 <p style="text-align: left">Collect the survey results to gain insights for your business!</p>
                             </div>
                             <div class="service-box">
-                                <form action="" method="post" role="form" class="contactForm" id="test-form">
+                                <form action="" method="post" role="form" class="contactForm" id="test-form4">
                                     <div class="form-group">
                                         <input type="text" name="form_field_3" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
@@ -216,32 +214,32 @@
         </div>
     </div>
     <form id="test-form">
-  
-  <div>
-    <label>Field 1</label>
-    <input type="text" name="form_field_1" placeholder="Field 1"/>
-  </div>
 
-  <div>
-    <label>Field 2</label>
-    <input type="text" name="form_field_2" placeholder="Field 2"/>
-  </div>
-  
-  <div>
-    <label>Field 3</label>
-    <input type="text" name="form_field_3" placeholder="Field 3"/>
-  </div>
-  
-  <div>
-    <label>Field 4</label>
-    <input type="text" name="form_field_4" placeholder="Field 4"/>
-  </div>
+        <div>
+            <label>Field 1</label>
+            <input type="text" name="form_field_1" placeholder="Field 1" />
+        </div>
 
-  <div>
-    <button type="submit"id="submit-form">Submit</button>
-  </div>
+        <div>
+            <label>Field 2</label>
+            <input type="text" name="form_field_2" placeholder="Field 2" />
+        </div>
 
-</form>
+        <div>
+            <label>Field 3</label>
+            <input type="text" name="form_field_3" placeholder="Field 3" />
+        </div>
+
+        <div>
+            <label>Field 4</label>
+            <input type="text" name="form_field_4" placeholder="Field 4" />
+        </div>
+
+        <div>
+            <button type="submit" id="submit-form">Submit</button>
+        </div>
+
+    </form>
     <!--SERVICE END-->
     <!--FOOTER END-->
     <div class="footer-bottom">
@@ -290,22 +288,22 @@
 
     </script>-->
     <script>
-    var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec'
+        var $form = $('form#test-form'),
+            url = 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec'
 
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
+        $('#submit-form').on('click', function(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+                // do something
+            );
+        })
     </script>
-    
+
 
 </body>
 
