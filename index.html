@@ -2,6 +2,20 @@
 <html lang="en" class=" js no-touch">
 
 <head>
+    <!-- Global site tag (g (gtag.js) - ) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127127728-1"></script>
+    <script>    
+        window.dataLayer = w = = window.dataLayer || || [];
+
+        function gtag() {
+            () {
+                dataLayer.push(arg(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-127127728-1');
+
+    </script>
     <title>DIME</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -201,6 +215,33 @@
             </div>
         </div>
     </div>
+    <form id="test-form">
+  
+  <div>
+    <label>Field 1</label>
+    <input type="text" name="form_field_1" placeholder="Field 1"/>
+  </div>
+
+  <div>
+    <label>Field 2</label>
+    <input type="text" name="form_field_2" placeholder="Field 2"/>
+  </div>
+  
+  <div>
+    <label>Field 3</label>
+    <input type="text" name="form_field_3" placeholder="Field 3"/>
+  </div>
+  
+  <div>
+    <label>Field 4</label>
+    <input type="text" name="form_field_4" placeholder="Field 4"/>
+  </div>
+
+  <div>
+    <button type="submit"id="submit-form">Submit</button>
+  </div>
+
+</form>
     <!--SERVICE END-->
     <!--FOOTER END-->
     <div class="footer-bottom">
@@ -227,7 +268,7 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
-    <script>
+    <!--<script>
         $(document).ready(function() {
 
             var $form = $('form#test-form'),
@@ -247,21 +288,24 @@
 
         });
 
-    </script>
-    <!-- Global site tag (g (gtag.js) - ) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127127728-1"></script>
+    </script>-->
     <script>
-        window.dataLayer = w = = window.dataLayer || || [];
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec'
 
-        function gtag() {
-            () {
-                dataLayer.push(arg(arguments);
-                }
-                gtag('js', new Date());
-
-                gtag('config', 'UA-127127728-1');
-
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
     </script>
+    
 
 </body>
 
