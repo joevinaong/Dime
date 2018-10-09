@@ -79,10 +79,15 @@
                                 <div class="form-sec">
                                     <form action="" method="post" role="form" class="contactForm" id="test-form1">
                                         <div class="form-group">
-                                            <input type="text" name="form_field_1" class="form-control text-field-box" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                            <input type="text" name="form_field_2" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input type="text" name="Diner_Name" class="form-control text-field-box" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input type="text" name="Diner_Email" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                             <div class="validation"></div>
-
+                                            <input hidden name="Owner_Name" />
+                                            <input hidden name="Owner_Email" />
+                                            <!--<input hidden type="text" name="form_field_3" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <div class="validation"></div>
+                                            <input hidden type="text" name="form_field_4" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <div class="validation"></div>-->
                                             <button class="button-medium" id="submit-form1" type="submit" name="contact">Submit Now</button>
                                         </div>
                                     </form>
@@ -105,9 +110,12 @@
                                 <div class="form-sec">
                                     <form action="" method="post" role="form" class="contactForm" id="test-form2">
                                         <div class="form-group">
-                                            <input type="text" name="form_field_3" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input hidden name="Diner_Name" />
+                                            <input hidden name="Diner_Email" />
+                                            <input type="text" name="Owner_Name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                             <div class="validation"></div>
-                                            <input type="text" name="form_field_4" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input type="text" name="Owner_Email" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+
                                             <div class="validation"></div>
                                             <button class="button-medium" id="submit-form2" type="submit" name="contact">Submit Now</button>
                                         </div>
@@ -165,11 +173,12 @@
                             <div class="service-box">
                                 <form action="" method="post" role="form" class="contactForm" id="test-form3">
                                     <div class="form-group">
-                                        <input type="text" name="form_field_1" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="Diner_Name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
-                                        <input type="text" name="form_field_2" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="Diner_Email" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
-
+                                        <input hidden name="Owner_Name" />
+                                        <input hidden name="Owner_Email" />
                                         <button class="button-medium" id="submit-form3" type="submit" name="contact">Submit Now</button>
                                     </div>
 
@@ -200,9 +209,11 @@
                             <div class="service-box">
                                 <form action="" method="post" role="form" class="contactForm" id="test-form4">
                                     <div class="form-group">
-                                        <input type="text" name="form_field_3" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <input hidden name="Diner_Name" />
+                                        <input hidden name="Diner_Email" />
+                                        <input type="text" name="Owner_Name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
-                                        <input type="text" name="form_field_4" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="Owner_Email" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
 
                                         <button class="button-medium" id="submit-form4" type="submit" name="contact">Submit Now</button>
@@ -216,33 +227,7 @@
             </div>
         </div>
     </div>
-    <form id="test-form">
 
-        <div>
-            <label>Field 1</label>
-            <input type="text" name="form_field_1" placeholder="Field 1" />
-        </div>
-
-        <div>
-            <label>Field 2</label>
-            <input type="text" name="form_field_2" placeholder="Field 2" />
-        </div>
-
-        <div>
-            <label>Field 3</label>
-            <input type="text" name="form_field_3" placeholder="Field 3" />
-        </div>
-
-        <div>
-            <label>Field 4</label>
-            <input type="text" name="form_field_4" placeholder="Field 4" />
-        </div>
-
-        <div>
-            <button type="submit" id="submit-form">Submit</button>
-        </div>
-
-    </form>
     <!--SERVICE END-->
     <!--FOOTER END-->
     <div class="footer-bottom">
@@ -269,44 +254,62 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
-    <!--<script>
+    <script>
         $(document).ready(function() {
 
-            var $form = $('form#test-form'),
-                url = 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec'
-
-            $('#submit-form').on('click', function(e) {
+            var $form1 = $('form#test-form1');
+            var $form2 = $('form#test-form2');
+            var $form3 = $('form#test-form3');
+            var $form4 = $('form#test-form4');
+            $('#submit-form1').on('click', function(e) {
                 e.preventDefault();
                 var jqxhr = $.ajax({
-                    url: url,
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
                     method: "GET",
                     dataType: "json",
-                    data: $form.serializeObject()
+                    data: $form1.serialize()
                 }).success(
                     // do something
                 );
             })
+            $('#submit-form2').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form2.serialize()
+                }).success(
+                    // do something
+                );
+            });
+            $('#submit-form3').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form3.serialize()
+                }).success(
+                    // do something
+                );
+            });
+            $('#submit-form4').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form4.serialize()
+                }).success(
+                    // do something
+                );
+            });
 
         });
 
-    </script>-->
-    <script>
-        var $form = $('form#test-form'),
-            url = 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec'
-
-        $('#submit-form').on('click', function(e) {
-            e.preventDefault();
-            var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $form.serializeObject()
-            }).success(
-                // do something
-            );
-        })
-
     </script>
+
 
 
 </body>
