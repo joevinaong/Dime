@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class=" js no-touch">
+
+<head>
+    <!-- Global site tag (g (gtag.js) - ) - Google Analytics -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127127728-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127127728-1');
+
+    </script>
+    <title>DIME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- =======================================================
+    Theme Name: Tempo
+    Theme URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+    <!--HEADER START-->
+    <div class="main-navigation navbar-fixed-top">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+                    <a class="navbar-brand" href="index.html">DIME</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#banner">Home</a></li>
+                        <li><a href="#how">How it works</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--HEADER END-->
+
+    <!--BANNER START-->
+    <div id="banner" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <h1 class="small">Welcome To <span style="font-family: 'Josefin Slab'" class="bold">DIME</span></h1>
+                    <p class="big">Get rewarded from your favourite eateries by doing surveys</p>
+                    <br>
+
+                    <h2 class="big" style="color: white; text-align: center">FIRST 100 SIGN UPS ONLY<br>Entitlement to a lifetime of premium access, for FREE!</h2>
+                    <div class="col-md-6">
+
+                        <h2 class="big" style="color: white; text-align: center">• Rewards from luxury restaurants</h2>
+                        <br>
+
+                        <div class="team-info" style="background: white">
+                            <div class="img-sec">
+                                    <img src="img/food.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="fig-caption">
+                                <h3>I'm a Diner</h3>
+                                <p class="marb-20">Free food from just doing simple surveys?<br> Sign me up!</p>
+                                <div class="form-sec">
+                                    <form action="" method="post" role="form" class="contactForm" id="test-form1">
+                                        <div class="form-group">
+                                            <input type="text" name="Diner_Name" class="form-control text-field-box" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input type="text" name="Diner_Email" class="form-control text-field-box" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <div class="validation"></div>
+                                            <input hidden name="Owner_Name" />
+                                            <input hidden name="Owner_Email" />
+                                            <input hidden name="Form" value="B" />
+                                            <button class="button-medium" id="submit-form1" type="submit" name="contact">Submit Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="big" style="color: white; text-align: center">• Advanced business insights</h2>
+                        <br>
+                        <div class="team-info" style="background: white">
+                            <div class="img-sec2">
+                                <img src="img/kitchen.jpg" class="img-responsive">
+                            </div>
+                            <div class="fig-caption">
+                                <h3>I'm an F&B Operator</h3>
+                                <p class="marb-20">I'd love to post questions to gain feedback from my customers<br>Sign me up!</p>
+                                <div class="form-sec">
+                                    <form action="" method="post" role="form" class="contactForm" id="test-form2">
+                                        <div class="form-group">
+                                            <input hidden name="Diner_Name" />
+                                            <input hidden name="Diner_Email" />
+                                            <input type="text" name="Owner_Name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <div class="validation"></div>
+                                            <input type="text" name="Owner_Email" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <input hidden name="Form" value="B" />
+
+                                            <div class="validation"></div>
+                                            <button class="button-medium" id="submit-form2" type="submit" name="contact">Submit Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<a href="#" class="btn btn-banner">Learn More<i class="fa fa-send"></i></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BANNER END-->
+
+    <!--CTA1 START-->
+    <div class="cta-1">
+        <div class="container">
+            <div class="row text-center white">
+                <h1 class="cta-title">Say Hi to <span style="font-family: 'Josefin Slab'" class="bold">DIME</span></h1>
+                <p class="cta-sub-title">A platform to connect Diner's feedback to F&B Operators in exchange for FREE meals!</p>
+            </div>
+        </div>
+    </div>
+    <!--CTA1 END-->
+
+    <!--SERVICE START-->
+    <div id="how" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="page-title text-center">
+                    <h1 style="font-family: 'Raleway'" class="bold">How does this work?</h1>
+                    <p>Order, cook, serve, pay, and leave. <br>Diners and F&B staffs do not usually get to interact with each other during their times in the eatery.<br> <span style="font-family: 'Josefin Slab'" class="bold">DIME</span> connects and engages Diners with F&B Operators to improve the quality of the dining experience and attract more customers!</p>
+                    <div class="col-md-6">
+                        <h1 style="font-family: 'Raleway'">For Diners</h1>
+                        <hr class="pg-titl-bdr-btm">
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fa fa-file-text-o"></i></div>
+                            <div class="service-text">
+                                <h3 style="text-align: left">Choose!</h3>
+                                <p style="text-align: left">Choose your favourite F&B outlet from our list of our partners!</p>
+                            </div>
+                            <div class="service-icon"><i class="fa fa-edit"></i></div>
+                            <div class="service-text">
+                                <h3 style="text-align: left">Fill!</h3>
+                                <p style="text-align: left">Fill up the series of survey questions provided by your selected outlet! </p>
+                            </div>
+                            <div class="service-icon"><i class="fa fa-gift"></i></div>
+                            <div class="service-text">
+                                <h3 style="text-align: left">Collect!</h3>
+                                <p style="text-align: left">Collect your free meal voucher when you complete the survey!</p>
+                            </div>
+                            <div class="service-box">
+                                <form action="" method="post" role="form" class="contactForm" id="test-form3">
+                                    <div class="form-group">
+                                        <p>FREE food? <br>Sign me up now!</p>
+                                        <input type="text" name="Diner_Name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                        <input type="text" name="Diner_Email" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                        <input hidden name="Owner_Name" />
+                                        <input hidden name="Owner_Email" />
+                                        <input hidden name="Form" value="B" />
+                                        <button class="button-medium" id="submit-form3" type="submit" name="contact">Submit Now</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <h1 style="font-family: 'Raleway'">For F&B Operators</h1>
+                        <hr class="pg-titl-bdr-btm">
+                        <div class="service-box">
+                            <div class="service-icon"><i class="fa fa-user-plus"></i></div>
+                            <div class="service-text">
+                                <h3 style="text-align: left">List!</h3>
+                                <p style="text-align: left">List your F&B outlet with DIME!</p>
+                            </div>
+                            <div class="service-icon"><i class="fa fa-plus-square-o"></i></div>
+                            <div class="service-text">
+                                <h3 style="text-align: left">Post!</h3>
+                                <p style="text-align: left">Post your survey questions and meal rewards under your listing!</p>
+                            </div>
+                            <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+                            <div class="service-text">
+                                <h3 style="text-align: left">Collect!</h3>
+                                <p style="text-align: left">Collect the survey results to gain insights for your business!</p>
+                            </div>
+                            <div class="service-box">
+                                <form action="" method="post" role="form" class="contactForm" id="test-form4">
+                                    <div class="form-group">
+                                        <p>INSIGHTS for my business? <br>Sign me up now!</p>
+                                        <input hidden name="Diner_Name" />
+                                        <input hidden name="Diner_Email" />
+                                        <input type="text" name="Owner_Name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                        <input type="text" name="Owner_Email" class="form-control text-field-box" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                        <input hidden name="Form" value="B" />
+
+                                        <button class="button-medium" id="submit-form4" type="submit" name="contact">Submit Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SERVICE END-->
+    <!--FOOTER END-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">
+                <div class="footer_copyright">
+                    <p> <span style="font-family: 'Josefin Slab'" class="bold">DIME</span> © Copyright, All Rights Reserved.</p>
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Tempo
+            -->
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var $form1 = $('form#test-form1');
+            var $form2 = $('form#test-form2');
+            var $form3 = $('form#test-form3');
+            var $form4 = $('form#test-form4');
+            $('#submit-form1').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form1.serialize()
+                }).always(function(done) {
+                    window.alert("Form is successfully submitted! \nWe will notify you at your email when DIME is ready!\nStay tuned to our updates! :)");
+                });
+            })
+            $('#submit-form2').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form2.serialize()
+                }).always(function(done) {
+                    window.alert("Form is successfully submitted! \nWe will notify you at your email when DIME is ready!\nStay tuned to our updates! :)");
+                });
+            });
+            $('#submit-form3').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form3.serialize()
+                }).always(function(done) {
+                    window.alert("Form is successfully submitted! \nWe will notify you at your email when DIME is ready!\nStay tuned to our updates! :)");
+                });
+            });
+            $('#submit-form4').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbwL1ZDZUc5qE3VTQgUPofckt6-gmR7rvIVjnDn9SiFsxsAde1k/exec',
+                    method: "GET",
+                    dataType: "json",
+                    data: $form4.serialize()
+                }).always(function(done) {
+                    window.alert("Form is successfully submitted! \nWe will notify you at your email when DIME is ready!\nStay tuned to our updates! :)");
+                });
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
